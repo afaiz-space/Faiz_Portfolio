@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap");
+
+:root {
+  --font-family-poppins: "Poppins", sans-serif;
+}
+.skill-container {
+  margin-top: 4rem;
+  width: 100%;
+  min-height: 15rem;
+  text-align: center;
+}
+.skill-hdg {
+  margin: 1rem 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.main-card {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #bbbbbb;
+  box-shadow: 2px 2px 6px 0px rgb(10 6 6 / 28%),
+    0px 0px 6px 0px rgb(10 6 6 / 28%);
+}
+.skill-card {
+  margin: 1rem 0;
+  width: 80%;
+  background-color: #0a0a0a;
+  border-radius: 8px;
+  /* border: 2px solid red; */
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  box-shadow: 2px 2px 6px 0px rgb(10 6 6 / 28%),
+    0px 0px 6px 0px rgb(10 6 6 / 28%);
+}
+.svg-logo {
+  width: 3rem;
+}
+.logo-hdg {
+  font-family: var(--font-family-poppins);
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.logo-link {
+  text-decoration: overline;
+  color: #ffffff;
+}
+.logo-link:hover {
+  color: #ff7a7a;
+  transition: ease 0.5s;
+}

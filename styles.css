@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap");
+
+:root {
+  --font-family-poppins: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-poppins);
+}
+@font-face {
+  font-family: darling;
+  src: url(font/Darling.ttf);
+}
+body {
+  background-color: #bbbbbb;
+
+  font-size: 14px;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* header section */
+.head_container {
+  position: sticky;
+  top: 0;
+  min-height: 4rem;
+  background-color: #eeeeee;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.logo {
+  padding: 0 20px 0 20px;
+}
+.logo-hdg-1 {
+  font-family: darling;
+  font-size: 2rem;
+}
+
+.nav_links {
+  padding: 0 20px 0 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  box-shadow: 2px 2px 6px 0px rgb(10 6 6 / 28%),
+    0px 0px 6px 0px rgb(10 6 6 / 28%);
+}
+.links {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.links:hover {
+  border: none;
+  transition: all 0.8ms ease;
+}
+.links>a,
+.icon_links/*footer section links*/>a {
+  color: #012d3d;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* profile section */
+.profile_detaile {
+  margin-top: 4rem;
+
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+.detaile {
+  padding: 10px 0;
+
+  font-size: large;
+}
+.image {
+  text-align-last: center;
+}
+.pr-image {
+  text-align: center;
+
+  width: 80%;
+}
+
+/* footer section */
+.footer {
+  min-height: 9vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+/* .social_links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+.button_1 {
+  border: none;
+  padding: 10px;
+  width: 7em;
+  background-color: #012d3d;
+  border-radius: 30px;
+  color: #f8f6e7;
+  font-weight: 500;
+  letter-spacing: 1px;
+} */
+span {
+  letter-spacing: 1px;
+  font-weight: 200;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+@media screen and (max-width: 678px) {
+  .nav_links {
+    margin-top: 10px;
+  }
+  .profile_detaile {
+    flex-direction: column;
+  }
+  .detaile {
+    text-align: center;
+  }
+}
